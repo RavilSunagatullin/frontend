@@ -7,37 +7,27 @@
     <script src="js/script.js" defer></script>
     <title>Learning frontend</title>
   </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="#"> Главая</a>
-          </li>
-          <li>
-            <a href="pages/picture.html"> Картинки</a>
-          </li>
-          <li>
-            <a href="pages/abaut.html"> О нас</a>
-          </li>
-        </ul>
-      </nav>
+  <body class="theme">
+    <header class="header">
+          <a class="header__link" href="#"> Главая</a>
+          <a class="header__link" href="pages/picture.html"> Картинки</a>
+          <a class="header__link" href="pages/abaut.html"> О нас</a>
     </header>
     <main>
-      <section class="box">
-        <h1>Сайт с картинками</h1>
-        <p>
+      <section class="article">
+        <h1 class="article__title">Сайт с картинками</h1>
+        <p class="article__description">
           Далеко-далеко за словесными горами в стране гласных и согласных живут
           рыбные тексты. Собрал, языкового образ!
         </p>
       </section>
-      <section>
-        <h2>тема картинок</h2>
-        <ul>
-          <li><a href="#">котики</a></li>
-          <li><a href="#">собакка</a></li>
-          <li><a href="#">рыбы</a></li>
-        </ul>
+      <section class="article article--right">
+            <h2 class="article__title">тема картинок</h2>
+            <div class="article__list">
+              <a class="article__list-item" href="#">котики</a>
+              <a class="article__list-item" href="#">собакка</a>
+              <a class="article__list-item" href="#">рыбы</a>
+            </div>
       </section>
     </main>
     <footer>
