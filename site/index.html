@@ -8,34 +8,41 @@
     <title>Learning frontend</title>
   </head>
   <body class="theme">
-    <header class="header">
-          <a class="header__link" href="#"> Главая</a>
-          <a class="header__link" href="pages/picture.html"> Картинки</a>
-          <a class="header__link" href="pages/abaut.html"> О нас</a>
-    </header>
-    <main>
-      <section class="article">
-        <h1 class="article__title">Сайт с картинками</h1>
-        <p class="article__description">
-          Далеко-далеко за словесными горами в стране гласных и согласных живут
-          рыбные тексты. Собрал, языкового образ!
-        </p>
-      </section>
-      <section class="article article--right">
-            <h2 class="article__title">тема картинок</h2>
-            <div class="article__list">
-              <a class="article__list-item" href="#">котики</a>
-              <a class="article__list-item" href="#">собакка</a>
-              <a class="article__list-item" href="#">рыбы</a>
-            </div>
-      </section>
-    </main>
-    <footer>
-      <div class="box1">
-        <h2>Зарегистрируйтесь</h2>
+    <div class="content">
+      <header class="header">
+        <a class="header__link" href="#"> Главая</a>
+        <a class="header__link" href="pages/picture.html"> Картинки</a>
+        <a class="header__link" href="pages/abaut.html"> О нас</a>
+      </header>
+      <main>
+        <section class="article">
+          <h1 class="article__title">Сайт с картинками</h1>
+          <p class="article__description">
+            Далеко-далеко за словесными горами в стране гласных и согласных
+            живут рыбные тексты. Собрал, языкового образ!
+          </p>
+        </section>
+        <section class="article article--right">
+          <h2 class="article__title">тема картинок</h2>
+          <div class="article__list">
+            <a class="article__list-item" href="#">котики</a>
+            <a class="article__list-item" href="#">собакка</a>
+            <a class="article__list-item" href="#">рыбы</a>
+          </div>
+        </section>
+        <section class="article">
+          <h1 class="article__title">Сайт с картинками</h1>
+          <p class="article__description">
+            Далеко-далеко за словесными горами в стране гласных и согласных
+            живут рыбные тексты. Собрал, языкового образ!
+          </p>
+        </section>
 
-        <form action="#">
-          <div>
+      </main>
+      <footer class="footer">
+        <h2 class="footer__title">Зарегистрируйтесь</h2>
+        <form action="#" class="form">
+          <div class="form__input">
             <label for="input"> email </label>
             <input
               type="text"
@@ -44,7 +51,7 @@
               id="input"
             />
           </div>
-          <div>
+          <div class="form__input">
             <label for="input"> пароль </label>
             <input
               type="text"
@@ -53,9 +60,9 @@
               id="input"
             />
           </div>
-          <button type="submit">ОК</button>
+          <button class="button" type="submit">ОК</button>
         </form>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
