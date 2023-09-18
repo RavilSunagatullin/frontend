@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -45,8 +46,6 @@ a {
   width: fit-content;
 }
 .article--right {
-  width: 100%;
-  margin-left: 20px;
   text-align: right;
   border-radius: 8px 0 0 8px;
   width: fit-content;
@@ -64,7 +63,7 @@ a {
   border: solid white;
 }
 .footer {
-    vertical-align:bottom;
+   margin: 1 auto 30 5;
 }
 .footer__title {
 }
