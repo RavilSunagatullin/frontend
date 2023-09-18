@@ -1,0 +1,26 @@
+
+.box {   
+    width : 500px;
+    height : 90px;
+    margin: ;
+    padding: ;
+    outline: ;
+    box-sizing: border-box;
+    opacity: ;
+    transform: ;
+    
+
+
+}
+body {
+    background-image: linear-gradient(to  right,rgb(255, 94, 0), rgb(110, 10, 10) ) ;
+    width: auto;
+    height: 1000;
+    box-sizing: border-box;
+} 
+.box1{
+    background-image: linear-gradient(to  right,rgb(0, 255, 21), rgb(110, 10, 10) ) ;
+    width: 1000;
+    height: 3123;
+}
+float 
