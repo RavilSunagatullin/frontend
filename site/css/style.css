@@ -15,8 +15,12 @@ a {
   font-size: 16px;
   height: 100vh;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
 }
-
+.content {
+  flex: 1 0 auto;
+}
 .header {
   margin: 0 auto;
   padding: 8px;
@@ -32,11 +36,16 @@ a {
   padding: 8px;
   margin-left: 20px;
   border-radius: 8px;
+  transition: 0.3s ease;
+}
+.header__link:hover{
+    background-color: red;
 }
 .article {
   margin-top: 20px;
   margin-right: 20px;
   border: solid white;
+  border-left: none;
   padding: 10px;
   border-radius: 0 8px 8px 0;
   background-color: green;
@@ -46,6 +55,10 @@ a {
   width: fit-content;
 }
 .article--right {
+  border-left: solid white;
+  border-right: none;
+  width: 100%;
+  margin-left: 20px;
   text-align: right;
   border-radius: 8px 0 0 8px;
   width: fit-content;
@@ -61,15 +74,66 @@ a {
   padding: 8px;
   border-radius: 8px;
   border: solid white;
+  transition: 0.3s ease;
 }
+.article__list-item:hover{
+    background-color: red;
+} 
 .footer {
+
    margin: 1 auto 30 5;
 }
 .footer__title {
 }
 .form {
+
+  border: solid white;
+  border-bottom: none;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid white;
+  padding: 10px 20px;
+  border-radius: 8px 8px 0 0;
+  background-color: green;
 }
+
 .form__input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+    margin: 8px auto;
 }
+.form__input [type="text"]{
+    border: solid white;
+    padding: 0 10px;
+    transition: 0.3s ease;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #f0b400;
+    color:white;
+}
+
+.form__input [type="text"]:focus{
+    background-color: red;
+
+}
+input::-moz-placeholder { color: #fff; }
+input::-webkit-input-placeholder { color: #fff; }
+
 .button {
+
+
+    background-color: #f0b400;
+    color:white;
+    padding: 10px;
+    border-radius: 8px;
+    border: solid white;
+    width: 100%;
+    transition: 0.3s ease;
 }
+.button:hover{
+    background-color: red;
+}
+
