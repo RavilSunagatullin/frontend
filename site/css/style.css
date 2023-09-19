@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -18,8 +17,15 @@ a {
   display: flex;
   flex-direction: column;
 }
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
 .content {
   flex: 1 0 auto;
+  margin-bottom: 20px;
 }
 .header {
   margin: 0 auto;
@@ -38,8 +44,8 @@ a {
   border-radius: 8px;
   transition: 0.3s ease;
 }
-.header__link:hover{
-    background-color: red;
+.header__link:hover {
+  background-color: red;
 }
 .article {
   margin-top: 20px;
@@ -53,6 +59,11 @@ a {
   flex-direction: column;
   gap: 7px;
   width: fit-content;
+}
+.article--line {
+  border-radius: 8px;
+  border: solid white;
+
 }
 .article--right {
   border-left: solid white;
@@ -76,17 +87,34 @@ a {
   border: solid white;
   transition: 0.3s ease;
 }
-.article__list-item:hover{
-    background-color: red;
-} 
+.article__list-item:hover {
+  background-color: red;
+}
+.article__description{
+  width: fit-content;
+  max-width: 500px;
+}
+.transform {
+  transform: translateX(-90%);
+  transition: 0.5s ease-in-out;
+}
+.transform--right {
+  transform: translateX(80%);
+}
+.transform--bottom {
+  transform: translateX(0);
+  transform: translateY(80%);
+}
+.transform:hover {
+  transform: translateX(0);
+  transform: translateY(0);
+}
+
 .footer {
+  margin: 1 auto 30 5;
+}
 
-   margin: 1 auto 30 5;
-}
-.footer__title {
-}
 .form {
-
   border: solid white;
   border-bottom: none;
   width: fit-content;
@@ -99,41 +127,58 @@ a {
 }
 
 .form__input {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 5px;
-    margin: 8px auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+  margin: 8px auto;
 }
-.form__input [type="text"]{
-    border: solid white;
-    padding: 0 10px;
-    transition: 0.3s ease;
-    height: 40px;
-    border-radius: 8px;
-    background-color: #f0b400;
-    color:white;
+.form__input [type="text"] {
+  border: solid white;
+  padding: 0 10px;
+  transition: 0.3s ease;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #f0b400;
+  color: white;
 }
 
-.form__input [type="text"]:focus{
-    background-color: red;
-
+.form__input [type="text"]:focus {
+  background-color: red;
 }
-input::-moz-placeholder { color: #fff; }
-input::-webkit-input-placeholder { color: #fff; }
+input::-moz-placeholder {
+  color: #fff;
+}
+input::-webkit-input-placeholder {
+  color: #fff;
+}
 
 .button {
-
-
-    background-color: #f0b400;
-    color:white;
-    padding: 10px;
-    border-radius: 8px;
-    border: solid white;
-    width: 100%;
-    transition: 0.3s ease;
+  background-color: #f0b400;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: solid white;
+  width: 100%;
+  transition: 0.3s ease;
 }
-.button:hover{
-    background-color: red;
+.button:hover {
+  background-color: red;
 }
-
+.image{
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  border-radius: 8px;
+  max-width: 500px;
+}
+.bg_img {
+  background-image:  url(/site/img/main.webp);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+@media (max-width:490px) {
+  .wrapper{
+    display: block;
+  }
+}
