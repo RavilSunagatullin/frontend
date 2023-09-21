@@ -1,0 +1,224 @@
+body {
+  background-color: #333;
+  /* background-image: url("/img/gray-texture.jpg ");
+  background-repeat: no-repeat ;
+  background-size: cover; */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 15px;
+}
+.main {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.header {
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  max-width: 1280px;
+  display: flex;
+  padding: 15px 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_link {
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 7px;
+  margin-left: 10px;
+  transition: 0.2s ease;
+}
+.header_link:hover {
+  background-color: #fd3e3e;
+  color: #fff;
+}
+.welcome {
+  text-align: center;
+  margin-top: 145px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+}
+.welcome_titule {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 170%;
+}
+.welcome_subtitule {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 170%;
+}
+.welcome_link {
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 7px;
+  margin-left: 10px;
+  transition: 0.2s ease;
+  color: #333;
+  max-width: 203px;
+  margin: 0 auto;
+  transition: 0.2s ease;
+}
+.welcome_link:hover {
+  background-color: #fd3e3e;
+  color: #fff;
+}
+.items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  margin-top: 150px;
+}
+.items_titule {
+  color: #fff;
+  margin-top: 20px;
+  width: 100%;
+  font-size: 30px;
+  display: flex;
+  align-items:center ;
+}
+.items_titule::after {
+  content: '';
+  width: 100%;
+  height: 50%;
+  border-bottom: 1px solid #fff;
+}
+.items_list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.item {
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 7px;
+    margin-left: 10px;
+    transition: 0.2s ease;
+    font-size: 30px;
+  }
+  .item:hover {
+    background-color: #fd3e3e;
+    color: #fff;
+  }
+.item2 {
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 7px;
+  margin-left: 10px;
+  transition: 0.2s ease;
+  font-size: 30px;
+}
+.item2:hover {
+  background-color: #fd3e3e;
+  color: #fff;
+}
+.items2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    margin-top: 150px;
+  }
+  .items2_titule {
+    color: #fff;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    align-items:center ;
+    gap: 15px;
+  }
+  .items2_titule::before {
+    content: '';
+    width: 100%;
+    height: 50%;
+    border-bottom: 1px solid #fff;
+
+  }
+  .items2_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .item3 {
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 7px;
+    margin-left: 10px;
+    transition: 0.2s ease;
+    font-size: 30px;
+  }
+  .item3:hover {
+    background-color: #fd3e3e;
+    color: #fff;
+  }
+  .items3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    margin-top: 150px;
+  }
+  .items3_titule {
+    color: #fff;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    align-items:center ;
+  }
+  .items3_titule::after {
+    content: '';
+    width: 100%;
+    height: 50%;
+    border-bottom: 1px solid #fff;
+  }
+  .items3_list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .footer {
+    margin-top: 74px;
+    width: 100%;
+    border-top: 1px solid #fff;
+    max-width: 1280px;
+    display: flex;
+    padding: 15px 5px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer_link {
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 7px;
+    margin-left: 10px;
+    transition: 0.2s ease;
+  }
+  .footer_link:hover {
+    background-color: #fd3e3e;
+    color: #fff;
+  }
